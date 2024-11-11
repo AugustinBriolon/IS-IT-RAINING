@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       })
       .catch(() => {
-        result.innerHTML = "Unable to retrieve weather data.";
+        result.innerHTML = "Please enable your location.";
       });
   }
 
   function error() {
-    result.innerHTML = "Unable to retrieve your location.";
+    result.innerHTML = "Please enable your location.";
   }
 });
