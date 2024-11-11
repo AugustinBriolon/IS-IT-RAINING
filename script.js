@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(response => response.json())
       .then(data => {
         const weather = data.weather[0].main.toLowerCase();
-        console.log(weather);
         if (weather.includes('rain')) {
           result.innerHTML = "yes";
         } else {
