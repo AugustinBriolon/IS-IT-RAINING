@@ -22,7 +22,7 @@ export default function Search({ onSearchResult, onError, setCityHome }: SearchP
   const handleMouseLeave = () => {
     if (!isFocused) {
       setIsHovered(false);
-      gsap.to('.search-container', { width: '40px', duration: 0.3, ease: 'power1.out' });
+      gsap.to('.search-container', { width: '36px', duration: 0.3, ease: 'power1.out' });
     }
   };
 
@@ -34,7 +34,7 @@ export default function Search({ onSearchResult, onError, setCityHome }: SearchP
   const handleBlur = () => {
     setIsFocused(false);
     setIsHovered(false);
-    gsap.to('.search-container', { width: '40px', duration: 0.3 });
+    gsap.to('.search-container', { width: '36px', duration: 0.3 });
   };
 
   const handleSearch = async () => {
